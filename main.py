@@ -30,11 +30,9 @@ def expected_value_two_tickets(mean, std_dev):
     return (ev_both_below_1 + ev_one_below_1 + ev_one_above_100 + 
             ev_both_between + ev_one_between_one_above + ev_both_above)
 
-mean = 50
-std_dev = 50
-
-ev_single = expected_value_single_ticket(mean, std_dev)
-ev_double = expected_value_two_tickets(mean, std_dev)
+#50 for mean and 50 for std_dev
+ev_single = expected_value_single_ticket(50, 50)
+ev_double = expected_value_two_tickets(50, 50)
 
 print(f"Expected Value of a Single Ticket: ${ev_single:.2f}")
 print(f"Expected Value of Two Tickets: ${ev_double:.2f}")
